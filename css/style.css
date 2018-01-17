@@ -93,6 +93,16 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 6em;
 }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
 
 /*end groovy suvy edits*/
 
@@ -522,7 +532,6 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff !important;
 }
 
-#gtco-about,
 #gtco-our-team,
 #gtco-contact {
   padding: 7em 0;
@@ -530,7 +539,12 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #gtco-practice-areas {
-  padding: 7em 0 0 0;
+  padding: 2.5em 0 0 0;
+  clear: both;
+}
+
+#gtco-about {
+  padding: 7em 0 3.5em 0;
   clear: both;
 }
 
@@ -563,7 +577,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #gtco-practice-areas .heading {
   position: relative;
 }
-#gtco-practice-areas .heading .subtle-text, #gtco-our-team .heading .subtle-text {
+#gtco-practice-areas .heading .subtle-text {
   position: absolute;
   bottom: -1.6em;
   left: 0;
@@ -575,7 +589,7 @@ h1, h2, h3, h4, h5, h6, figure {
   line-height: 1;
   text-overflow: clip;
 }
-#gtco-practice-areas .heading .subtle-text span, #gtco-our-team .heading .subtle-text span {
+#gtco-practice-areas .heading .subtle-text span {
   display: block;
 }
 #gtco-practice-areas .gtco-practice-area-item {
