@@ -103,6 +103,55 @@ h1, h2, h3, h4, h5, h6, figure {
                                   supported by Chrome and Opera */
 }
 
+.not-pop {
+  z-index: -1;
+}
+
+.popup {
+  width: 70%;
+  margin: 0 auto;
+  border: 5px solid #fafafa;
+  border-radius: 2em;
+  z-index: 1;
+}
+
+.popup img {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10%;
+  margin-bottom: 3%;
+  border-radius: 50%;
+  display: block;
+}
+
+.popup .close-button {
+  padding: 1em;
+  margin: 1em;
+  float: right;
+  font-size: 2em;
+  color: #e62b1e;
+  border-radius: 50%;
+  line-height: 26.141px;
+  background-color: #fafafa;
+  cursor: pointer;
+
+}
+
+.popup .speaker-name {
+  float: left;
+  margin-left: 5%;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.popup .speaker-bio {
+  margin-left: 50%;
+  margin-right: 5%;
+}
 
 /*end groovy suvy edits*/
 
