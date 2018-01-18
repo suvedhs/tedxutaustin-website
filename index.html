@@ -57,8 +57,7 @@
                      </div>
                      <div class="col-xs-10 text-right menu-1 main-nav">
                         <ul>
-                           <li class="a
-                              ctive"><a href="#" data-nav-section="home">Home</a></li>
+                           <li class="active"><a href="#" data-nav-section="home">Home</a></li>
                            <li><a href="#" data-nav-section="about">Theme</a></li>
                            <li><a href="#" data-nav-section="our-team">Speakers</a></li>
                            <li><a href="#" data-nav-section="practice-areas">About</a></li>
@@ -126,14 +125,14 @@
                <p class="sub"></p>
                <ul id="speaker-list">
                   <li>
-                     <a href="#">
+                     <div onclick="annie()">
                         <!-- pic -->
                         <img src="images/Speaker-Bios/images/annie-park.jpg" alt="Annie Park">
                         <!-- Name -->
                         <h5>Annie Park</h5>
                         <!-- description -->
                         <h6>Fourth-year PhD candidate studying Neuroscience</h6>
-                     </a>
+                     </div>
                   </li>
                   <li>
                      <a href="#">
@@ -510,13 +509,15 @@
             <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
          </div>
       </div>
-      <div id="annie-popup" class="popup">
-         <div class="close-button" onclick="">
-            &#10006;
-         </div>
-         <img src="images/Speaker-Bios/images/annie-park.jpg" alt="Annie Park">
-	        <p class="speaker-name">Annie Park</p>
-	        <p class="speaker-bio">Annie Park is a fourth year Ph.D. candidate studying Neuroscience at the University of Texas at Austin. She currently works in the Atkinson lab and is a member of the Waggoner Center for Alcohol & Addiction Research. She’s a recipient of a Fred Murphy Jones & Homer Lindsey Bruce Endowed Fellowship for alcohol research. For her undergraduate, she received a B.S. in Neuroscience and a minor in Physics from the University of Maryland in College Park. From 2008-2010 she was selected for a Howard Hughes Medical Institute Undergraduate Research Fellowship.</p>
+      <div id="annie-popup" class="everything-but-popup">
+        <div class="popup">
+           <div class="close-button" onclick="annie()">
+              &#10006;
+           </div>
+           <img src="images/Speaker-Bios/images/annie-park.jpg" alt="Annie Park">
+  	        <p class="speaker-name">Annie Park</p>
+  	        <p class="speaker-bio">Annie Park is a fourth year Ph.D. candidate studying Neuroscience at the University of Texas at Austin. She currently works in the Atkinson lab and is a member of the Waggoner Center for Alcohol & Addiction Research. She’s a recipient of a Fred Murphy Jones & Homer Lindsey Bruce Endowed Fellowship for alcohol research. For her undergraduate, she received a B.S. in Neuroscience and a minor in Physics from the University of Maryland in College Park. From 2008-2010 she was selected for a Howard Hughes Medical Institute Undergraduate Research Fellowship.</p>
+        </div>
       </div>
       <!-- jQuery -->
       <script src="js/jquery.min.js"></script>
@@ -533,5 +534,9 @@
       <script src="js/magnific-popup-options.js"></script>
       <!-- Main -->
       <script src="js/main.js"></script>
+      <!-- For popup speakers -->
+      <script src="js/pop.js"></script>
+
+      </script>
    </body>
 </html>
