@@ -5,6 +5,10 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'futura';
+  src: url("../fonts/futura/futura-light-bt.tff");
+}
 /* =======================================================
 *
 * 	Template Style
@@ -94,6 +98,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #speaker-list img {
   height: 12em;
   border-radius: 6em;
+  margin-bottom: 8%;
 }
 
 .noselect {
@@ -193,6 +198,27 @@ h1, h2, h3, h4, h5, h6, figure {
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
+}
+
+.ticket-button {
+    font-size: 48px;
+    font-family: 'futura', "Open Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: rgba(230, 43, 30, 1);
+    display: inline-block;
+    margin-top: 12px;
+    border: 3px solid rgba(230, 43, 30, 1);
+    /* #e62b1e */
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 3px;
+}
+
+.ticket-button:hover {
+    color: #fff;
+    border-color: #e62b1e;
+    background-color: rgba(230, 43, 30, 1);
 }
 
 /*end groovy suvy edits*/
@@ -362,7 +388,7 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 30px;
 }
 .gtco-nav ul li.btn-cta a:hover span {
-  background: #8bde2f;
+  background: #e62b1e;
   color: #fff;
 }
 .gtco-nav ul li.active > a {
