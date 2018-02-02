@@ -15,6 +15,11 @@
     font-weight: bold;
     src: url("../fonts/helvetica-neue-lt-std/HelveticaNeueLTStd-Blk.otf") format("opentype");
 }
+
+@font-face {
+    font-family: 'helvLight';
+    src: url("../fonts/HelveticaNeue-Light.otf") format("opentype");
+}
 /* =======================================================
 *
 * 	Template Style
@@ -83,10 +88,78 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: bolder;
 }
 
+.our-speakers {
+  padding-top: 50px;
+}
 
 #speaker-list, .team-list {
   list-style-type: none;
   padding: 0;
+}
+
+/*speaker section */
+#speaker-h1 {
+  color: white;
+  background-color: black;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 48px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: helvLight, Helvetica;
+  margin: 0;
+  font-weight: lighter;
+  text-align: center;
+}
+/*
+::webkit-scrollbar-x {
+  display: none;
+}*/
+/*speaker section groov*/
+#speaker-slider {
+  list-style-type: none;
+  overflow-x: scroll;
+  width: 90%;
+  padding-left: 0;
+  white-space: nowrap;
+  display: inline-block;
+  height: 24em;
+}
+
+#speaker-slider li {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 0;
+  padding: 25px 0px;
+  margin: 0 20px;
+}
+
+#speaker-slider li div {
+  width: 14em;
+  white-space: pre-line;
+  line-height: 0;
+}
+
+#speaker-slider li div img {
+  height: 14em;
+  width: auto;
+  border-radius: 50%;
+}
+#speaker-slider li div h5 {
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#speaker-slider li div h6 {
+  padding-top: 5px;
+  font-size: 13px;
+}
+
+#speaker-slider li div h5, #speaker-slider li div h6 {
+  margin: 0 auto;
+  width: 190px;
+  text-align: center;
 }
 
 #speaker-list li {
@@ -283,7 +356,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #our-team h1 {
   text-transform: uppercase;
   color: #e62b1e;
-  font-family: Helvetica;
+  font-family: helvLight, Helvetica;
   font-size: 48px;
   font-weight: lighter;
   margin-top: 2.6em;
@@ -357,8 +430,30 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-left: -1.5px;
 }
 
+#ted-head {
+  color: red;
+  line-height: 0px;
+  font-family: helvBlack;
+  letter-spacing: -1.5px;
+}
+
+#ted-head-d {
+  font-style: normal;
+  color: red;
+  margin-left: -1.5px;
+}
+
+#ted-head-x {
+  position: absolute;
+  margin-top: -3.5px;
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 24px;
+
+}
+
 #x-foot {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bolder;
   font-family: Helvetica;
   position: absolute;
@@ -443,14 +538,17 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
   font-weight: bold;
 }
+/*groovy edits*/
 .gtco-nav #gtco-logo em {
   color: #fff;
   font-weight: 100;
   font-style: normal;
+  margin-left: 15px;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
 }
+
 .gtco-nav #gtco-logo a {
   padding: 0px 10px;
   color: #fff;
@@ -609,7 +707,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 4px 20px;
   color: #fff;
 }
-.gtco-nav.scrolled #gtco-logo em, .gtco-nav.scrolled #gtco-logo a {
+.gtco-nav.scrolled #gtco-logo em {
   color: #000;
 }
 

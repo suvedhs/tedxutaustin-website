@@ -53,7 +53,7 @@
                <div class="container">
                   <div class="row">
                      <div class="col-sm-2 col-xs-12">
-                        <div id="gtco-logo"><a href="index.html"><span style="color:red;" >TEDx</span><em>UTAustin</em>
+                        <div id="gtco-logo"><a href="index.html"><span id="ted-head">TE</span><span id="ted-head-d">D</span><span id="ted-head-x">x</span><em>UTAustin</em>
                         </a></div>
                      </div>
                      <div class="col-xs-10 text-right menu-1 main-nav">
@@ -120,154 +120,256 @@
                </div>
             </section>
          </div>
-         <section data-section="our-speakers">
-            <br /><br />
-            <div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn" data-section="our-speakers">
-               <h1>Speakers</h1>
-               <p class="sub"></p>
+         <section data-section="our-speakers" class="our-speakers">
+           <h1 id="speaker-h1">Speakers</h1>
+           <div class="heading animate-box" data-animate-effect="fadeIn">
+             <ul id="speaker-slider">
+                <li>
+                   <div onclick="annie()">
+                      <!-- pic -->
+                      <img src="images/Speaker-Bios/images/annie-park.jpg" alt="Annie Park">
+                      <!-- Name -->
+                      <h5>Annie Park</h5>
+                      <!-- description -->
+                      <h6>Fourth-year PhD candidate studying Neuroscience</h6>
+                   </div>
+                </li>
+                <li>
+                  <div onclick="daron()">
+                      <!-- pic -->
+                      <img src="images/Speaker-Bios/images/daron-roberts.jpg" alt="Daron Roberts">
+                      <!-- Name -->
+                      <h5>Daron Roberts</h5>
+                      <!-- description -->
+                      <h6>Founding Director of UT's Center for Sports Leadership & Innovation</h6>
+                    </div>
+                </li>
+                <li>
+                  <div onclick="david()">
+                      <!-- pic -->
+                      <img src="images/Speaker-Bios/images/david-wyatt.jpg" alt="David Wyatt">
+                      <!-- Name -->
+                      <h5>David Wyatt</h5>
+                      <!-- description -->
+                      <h6>Specialist in PR, branding, and strategy for 20 years</h6>
+                    </div>
+                </li>
+                <li>
+                  <div onclick="doreen()">
+                      <!-- pic -->
+                      <img src="images/Speaker-Bios/images/doreen-lorenzo.jpg" alt="Doreen Lorenzo">
+                      <!-- Name -->
+                      <h5>Doreen Lorenzo</h5>
+                      <!-- description -->
+                      <h6>Leader of global creative firms. Design and innovation advisor of Fortune 100 companies</h6>
+                    </div>
+                </li>
+                <li>
+                  <div onclick="elizabeth()">
+                      <!-- pic -->
+                      <img src="images/Speaker-Bios/images/elizabeth-schasel.jpg" alt="Elizabeth Schasel">
+                      <!-- Name -->
+                      <h5>Elizabeth Schasel</h5>
+                      <!-- description -->
+                      <h6>Marketing and Plan II Honors major at UT</h6>
+                    </div>
+                </li>
+                <li>
+                  <div onclick="henry()">
+                      <!-- pic -->
+                      <img src="images/Speaker-Bios/images/henry-brands.jpg" alt="Henry Brands">
+                      <!-- Name -->
+                      <h5>Henry Brands</h5>
+                      <!-- description -->
+                      <h6>Professor, Author, Pulitzer Prize finalist</h6>
+                    </div>
+                </li>
+                <li>
+                  <div onclick="jake()">
+                      <!-- pic -->
+                      <img src="images/Speaker-Bios/images/jake-dunagan.jpg" alt="Jake Dunagan">
+                      <!-- Name -->
+                      <h5>Jake Dunagan</h5>
+                      <!-- description -->
+                      <h6>Experiential Futurist, Governance Designer, Teacher</h6>
+                    </div>
+                </li>
+                <li>
+                  <div onclick="just()">
+                      <!-- pic -->
+                      <img src="images/Speaker-Bios/images/just-kusko.jpg" alt="Just Kusko">
+                      <!-- Name -->
+                      <h5>Just Kusko</h5>
+                      <!-- description -->
+                      <h6>Creative Director turned Adventuring Humanitarian</h6>
+                    </div>
+                </li>
+                <li>
+                  <div onclick="karen()">
+                      <!-- pic -->
+                      <img src="images/Speaker-Bios/images/karen-gordon.jpg" alt="Karen Gordon">
+                      <!-- Name -->
+                      <h5>Karen Gordon</h5>
+                      <!-- description -->
+                      <h6>Serial Entrepreneur, helping individuals reach their highest potential for 20+ years</h6>
+                    </div>
+                </li>
+                <li>
+                  <div onclick="mitchell()">
+                      <!-- pic -->
+                      <img src="images/Speaker-Bios/images/mitchell-pham.jpg" alt="Mitchell Pham">
+                      <!-- Name -->
+                      <h5>Mitchell Pham</h5>
+                      <!-- description -->
+                      <h6>Environmental Science major turned business enthusiast at UT</h6>
+                    </div>
+                </li>
+                <li>
+                  <div onclick="raj()">
+                      <!-- pic -->
+                      <img src="images/Speaker-Bios/images/raj-vedam.jpg" alt="Raj Vedam">
+                      <!-- Name -->
+                      <h5>Raj Vedam</h5>
+                      <!-- description -->
+                      <h6>Electrical Engineer, Author, Researcher</h6>
+                    </div>
+                </li>
+                <li>
+                  <div onclick="ricco()">
+                      <!-- pic -->
+                      <img src="images/Speaker-Bios/images/ricco-garcia.png" alt="Ricco Garcia">
+                      <!-- Name -->
+                      <h5>Ricco Garcia</h5>
+                      <!-- description -->
+                      <h6>Attorney, Author, Legislative Advocate</h6>
+                    </div>
+                </li>
+                <li>
+                  <div onclick="shauna()">
+                      <!-- pic -->
+                      <img src="images/Speaker-Bios/images/shauna-sobers.jpg" alt="Shauna Sobers">
+                      <!-- Name -->
+                      <h5>Shauna Sobers</h5>
+                      <!-- description -->
+                      <h6>EdD in Higher Education Administration and Leadership</h6>
+                    </div>
+                </li>
+                <li>
+                  <div onclick="thea()">
+                      <!-- pic -->
+                      <img src="images/Speaker-Bios/images/thea-wood.jpg" alt="Thea Wood">
+                      <!-- Name -->
+                      <h5>Thea Wood</h5>
+                      <!-- description -->
+                      <h6>Entrepreneur promoting positive style, beauty, and wellness topics for women over 40</h6>
+                  </div>
+                </li>
+             </ul>
+           </div>
+
+            <!--<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn" data-section="our-speakers">
+
                <ul id="speaker-list">
                   <li>
                      <div onclick="annie()">
-                        <!-- pic -->
                         <img src="images/Speaker-Bios/images/annie-park.jpg" alt="Annie Park">
-                        <!-- Name -->
                         <h5>Annie Park</h5>
-                        <!-- description -->
                         <h6>Fourth-year PhD candidate studying Neuroscience</h6>
                      </div>
                   </li>
                   <li>
                     <div onclick="daron()">
-                        <!-- pic -->
                         <img src="images/Speaker-Bios/images/daron-roberts.jpg" alt="Daron Roberts">
-                        <!-- Name -->
                         <h5>Daron Roberts</h5>
-                        <!-- description -->
                         <h6>Founding Director of UT's Center for Sports Leadership & Innovation</h6>
                       </div>
                   </li>
                   <li>
                     <div onclick="david()">
-                        <!-- pic -->
                         <img src="images/Speaker-Bios/images/david-wyatt.jpg" alt="David Wyatt">
-                        <!-- Name -->
                         <h5>David Wyatt</h5>
-                        <!-- description -->
                         <h6>Specialist in PR, branding, and strategy for 20 years</h6>
                       </div>
                   </li>
                   <li>
                     <div onclick="doreen()">
-                        <!-- pic -->
                         <img src="images/Speaker-Bios/images/doreen-lorenzo.jpg" alt="Doreen Lorenzo">
-                        <!-- Name -->
                         <h5>Doreen Lorenzo</h5>
-                        <!-- description -->
                         <h6>Leader of global creative firms. Design and innovation advisor of Fortune 100 companies</h6>
                       </div>
                   </li>
                   <li>
                     <div onclick="elizabeth()">
-                        <!-- pic -->
                         <img src="images/Speaker-Bios/images/elizabeth-schasel.jpg" alt="Elizabeth Schasel">
-                        <!-- Name -->
                         <h5>Elizabeth Schasel</h5>
-                        <!-- description -->
                         <h6>Marketing and Plan II Honors major at UT</h6>
                       </div>
                   </li>
                   <li>
                     <div onclick="henry()">
-                        <!-- pic -->
                         <img src="images/Speaker-Bios/images/henry-brands.jpg" alt="Henry Brands">
-                        <!-- Name -->
                         <h5>Henry Brands</h5>
-                        <!-- description -->
                         <h6>Professor, Author, Pulitzer Prize finalist</h6>
                       </div>
                   </li>
                   <li>
                     <div onclick="jake()">
-                        <!-- pic -->
                         <img src="images/Speaker-Bios/images/jake-dunagan.jpg" alt="Jake Dunagan">
-                        <!-- Name -->
                         <h5>Jake Dunagan</h5>
-                        <!-- description -->
                         <h6>Experiential Futurist, Governance Designer, Teacher</h6>
                       </div>
                   </li>
                   <li>
                     <div onclick="just()">
-                        <!-- pic -->
                         <img src="images/Speaker-Bios/images/just-kusko.jpg" alt="Just Kusko">
-                        <!-- Name -->
                         <h5>Just Kusko</h5>
-                        <!-- description -->
                         <h6>Creative Director turned Adventuring Humanitarian</h6>
                       </div>
                   </li>
                   <li>
                     <div onclick="karen()">
-                        <!-- pic -->
                         <img src="images/Speaker-Bios/images/karen-gordon.jpg" alt="Karen Gordon">
-                        <!-- Name -->
                         <h5>Karen Gordon</h5>
-                        <!-- description -->
                         <h6>Serial Entrepreneur, helping individuals reach their highest potential for 20+ years</h6>
                       </div>
                   </li>
                   <li>
                     <div onclick="mitchell()">
-                        <!-- pic -->
                         <img src="images/Speaker-Bios/images/mitchell-pham.jpg" alt="Mitchell Pham">
-                        <!-- Name -->
                         <h5>Mitchell Pham</h5>
-                        <!-- description -->
                         <h6>Environmental Science major turned business enthusiast at UT</h6>
                       </div>
                   </li>
                   <li>
                     <div onclick="raj()">
-                        <!-- pic -->
                         <img src="images/Speaker-Bios/images/raj-vedam.jpg" alt="Raj Vedam">
-                        <!-- Name -->
                         <h5>Raj Vedam</h5>
-                        <!-- description -->
                         <h6>Electrical Engineer, Author, Researcher</h6>
                       </div>
                   </li>
                   <li>
                     <div onclick="ricco()">
-                        <!-- pic -->
                         <img src="images/Speaker-Bios/images/ricco-garcia.png" alt="Ricco Garcia">
-                        <!-- Name -->
                         <h5>Ricco Garcia</h5>
-                        <!-- description -->
                         <h6>Attorney, Author, Legislative Advocate</h6>
                       </div>
                   </li>
                   <li>
                     <div onclick="shauna()">
-                        <!-- pic -->
                         <img src="images/Speaker-Bios/images/shauna-sobers.jpg" alt="Shauna Sobers">
-                        <!-- Name -->
                         <h5>Shauna Sobers</h5>
-                        <!-- description -->
                         <h6>EdD in Higher Education Administration and Leadership</h6>
                       </div>
                   </li>
                   <li>
                     <div onclick="thea()">
-                        <!-- pic -->
                         <img src="images/Speaker-Bios/images/thea-wood.jpg" alt="Thea Wood">
-                        <!-- Name -->
                         <h5>Thea Wood</h5>
-                        <!-- description -->
                         <h6>Entrepreneur promoting positive style, beauty, and wellness topics for women over 40</h6>
                     </div>
                   </li>
                </ul>
-               <!--<p class="sub">Speaker lineup coming soon</p>
+               <p class="sub">Speaker lineup coming soon</p>
                   <p class="">Both forms below are due at 11:59 PM CST on <strong>Sunday, October 22, 2017</strong></p>
                   <a download="/StudentSpeakerApplicationForm2018.docx" href="/StudentSpeakerApplicationForm2018.docx" title="">
                   <img alt="" src="images/studentspeakerapplication.png" width="40%" align="left" hspace="20">
@@ -275,8 +377,8 @@
                   <a download="/StudentSpeakerNominationForm2018.docx" href="/StudentSpeakerNominationForm2018.docx" title="">
                   <img src="images/nominationbutton.png" alt="" width="40%" align="right" hspace="20">
                   </a>
-                  -->
-            </div>
+
+            </div>-->
          </section>
          <!-- <section id="gtco-our-speakers" >
             <div class="row row-pb-md">
