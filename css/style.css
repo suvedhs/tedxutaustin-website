@@ -463,7 +463,8 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: bolder;
   font-family: Helvetica;
   position: absolute;
-  margin-top: 1px;
+  line-height: 1;
+  margin-top: 16px;
   margin-left: 1.5px;
 }
 
@@ -500,6 +501,15 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .footer-links li a {
   color: #f8f8f8;
+}
+
+.foot-creds {
+  text-align: center;
+}
+
+.foot-creds a {
+  text-decoration: underline;
+  color: #777;
 }
 
 /*parallax*/
