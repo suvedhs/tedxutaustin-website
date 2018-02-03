@@ -20,6 +20,12 @@
     font-family: 'helvLight';
     src: url("../fonts/HelveticaNeue-Light.otf") format("opentype");
 }
+
+@font-face {
+    font-family: 'helvCB';
+    src: url("../fonts/HelveticaNeue-CondensedBold.otf") format("opentype");
+}
+
 /* =======================================================
 *
 * 	Template Style
@@ -102,12 +108,12 @@ h1, h2, h3, h4, h5, h6, figure {
   color: white;
   background-color: black;
   width: 100%;
-  text-transform: uppercase;
-  font-size: 48px;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-family: helvLight, Helvetica;
   margin: 0;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-family: helvLight, Helvetica;
   font-weight: lighter;
   text-align: center;
 }
@@ -494,6 +500,85 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .footer-links li a {
   color: #f8f8f8;
+}
+
+/*parallax*/
+.par-container {
+  height: 668px;
+  position: relative;
+  background:
+                linear-gradient(
+                  rgba(10,10,10, 0.4),
+                  rgba(10,10,10, 0.4)
+                ),
+                url('../images/tower.jpg'),
+                no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parinner {
+  position: relative;
+  top: 5%;
+
+}
+
+.parinner h1 {
+  text-transform: uppercase;
+  font-size: 48px;
+  text-align: center;
+  font-family: helvLight, Helvetica;
+  font-weight: lighter;
+  color: white;
+}
+
+.schedule-line {
+  position: relative;
+  width: 95%;
+  background-color: white;
+  border-bottom: 3px solid #e62b1e;
+  margin: 0 auto;
+  top: 35%;
+}
+
+#schedule {
+  position: relative;
+  top: 240px;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: top;
+}
+
+#schedule li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+#schedule li h5, #schedule li h4 {
+  color: white;
+  margin: 0;
+}
+
+#schedule li h4 {
+  font-size: 26px;
+  font-family: helvCB;
+  letter-spacing: 0px;
+}
+
+#schedule li h5 {
+  font-size: 16px;
+}
+
+.vl {
+  border-right: 1px solid white;
+  height: 35px;
+  margin-bottom: 15px;
+  width: 50%;
 }
 
 /*end new stuff*/
