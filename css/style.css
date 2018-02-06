@@ -515,6 +515,8 @@ h1, h2, h3, h4, h5, h6, figure {
 /*parallax*/
 .par-container {
   height: 668px;
+  z-index: 2;
+  width: 100%;
   position: relative;
   background:
                 linear-gradient(
@@ -525,12 +527,14 @@ h1, h2, h3, h4, h5, h6, figure {
                 no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  overflow-x: scroll;
 }
 
 .parinner {
-  position: relative;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
   top: 5%;
-
 }
 
 .parinner h1 {
@@ -540,11 +544,16 @@ h1, h2, h3, h4, h5, h6, figure {
   font-family: helvLight, Helvetica;
   font-weight: lighter;
   color: white;
+  z-index: 101;
+}
+
+#sch {
+  position: relative;
 }
 
 .schedule-line {
   position: relative;
-  width: 95%;
+  width: 1500px;
   background-color: white;
   border-bottom: 3px solid #e62b1e;
   margin: 0 auto;
@@ -558,6 +567,8 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0 auto;
   text-align: center;
   vertical-align: top;
+  white-space: nowrap;
+
 }
 
 #schedule li {

@@ -4,17 +4,14 @@
 <html>
    <head>
      <!-- google analytics code -->
-       <script type="text/javascript">
-       //don't forget to replace UA-XXXXX-X with website property name
-         var _gaq = _gaq || [];
-         _gaq.push(['_setAccount', 'UA-113486446-1']);
-         _gaq.push(['_trackPageview']);
-
-         (function() {
-           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-         })();
+       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113486446-1"></script>
+       <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){
+          dataLayer.push(arguments);
+        }
+        gtag('js',new Date());
+        gtag('config','UA-113486446-1');
 
        </script>
 
@@ -76,9 +73,7 @@
                      <div class="col-xs-10 text-right menu-1 main-nav">
                         <ul>
                            <li class="active"><a href="#" data-nav-section="home">Home</a></li>
-                           <li><a href="#" data-nav-section="about">Theme</a></li>
                            <li><a href="#" data-nav-section="our-speakers">Speakers</a></li>
-                           <li><a href="#" data-nav-section="practice-areas">About</a></li>
                            <li><a href="#" data-nav-section="schedule">Schedule</a></li>
                            <li><a href="#" data-nav-section="our-team">Our Team</a></li>
                            <li class="btn-cta"><a href="https://www.eventbrite.com/e/tedxutaustin-spring-2018-tickets-40986505742s"><span>Tickets</span></a></li>
@@ -432,7 +427,7 @@
                     <p>Ratione facilis quod laborum eaque illo dolore blanditiis nobis dicta voluptatem fugit optio, eveniet non dolor quia delectus, sint, dignissimos atque porro consequuntur unde. Soluta ex necessitatibus delectus saepe aliquam, culpa officiis doloremque, ipsa facere hic, voluptatem accusantium veniam, quasi! Explicabo accusantium sint, corporis consequuntur fugit ipsam, dolorum excepturi adipisci.</p>
                 </div>
             </div> -->
-            <section id="gtco-practice-areas" data-section="practice-areas">
+            <!--<section id="gtco-practice-areas" data-section="practice-areas">
                <div class="container">
                   <div class="row row-pb-md">
                      <div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
@@ -442,95 +437,6 @@
                      <p class="noselect" data-animate-effect="fadeIn">About</p>
                      <div class="row">
                         <div class="col-md-6">
-                           <div class="gtco-practice-area-item animate-box">
-                              <div class="gtco-icon">
-                                 <img src="images/Clock.svg" alt="" width="60%">
-                              </div>
-                              <div class="gtco-copy">
-                                 <h3>When?</h3>
-                                 <p>
-                                    This year's conference will be on
-                                    <strong>Saturday, February 10, 2018</strong>
-                                    <!--Student Activity Center:
-                                       <a href="https://goo.gl/maps/9mmr1ErVKXy">2201 Speedway, Austin, TX 78712</a> -->
-                                 </p>
-                              </div>
-                           </div>
-                           <!-- <div class="gtco-practice-area-item animate-box">
-                              <div class="gtco-icon">
-                              	<img src="images/Megaphone.png" alt="">
-                              </div>
-                              <div class="gtco-copy">
-                              	<h3>2018 Speaker Line-Up</h3>
-                              	<p>Applications for becoming a 2018 TEDx Speaker are open for students, professors, and members of the Austin community. Click here to download the speaker application!</p>
-                              </div>
-                              </div> -->
-                           <!-- <div class="gtco-practice-area-item animate-box">
-                              <div class="gtco-icon">
-                              	<img src="images/scale.png" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-                              </div>
-                              <div class="gtco-copy">
-                              	<h3>Financial Law</h3>
-                              	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
-                              </div>
-                              </div> -->
-                        </div>
-                        <div class="col-md-6">
-                           <div class="gtco-practice-area-item animate-box">
-                              <div class="gtco-icon">
-                                 <img src="images/map.svg" alt="" width="80%">
-                              </div>
-                              <div class="gtco-copy">
-                                 <h3>Where?</h3>
-                                 <p>The University of Texas at Austin Union Theater:
-                                    <a href="https://goo.gl/maps/Ux3zKtMNszJ2">Guadalupe St & W 24th St, Austin, TX 78712</a>
-                                 </p>
-                                 <!--<ul>
-                                    <li>Admission to TEDxUTAustin, February 10th.</li>
-                                    <li>Thank you in opening remarks.</li>
-                                    <li>Recognition across event programs and social media.</li>
-                                    <li>Opportunity to distribute gift items during intermissions.</li>
-                                    <li>Priority seating.</li>
-                                    </ul> -->
-                              </div>
-                           </div>
-                           <!-- <div class="gtco-practice-area-item animate-box">
-                              <div class="gtco-icon">
-                              	<img src="images/scale.png" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-                              </div>
-                              <div class="gtco-copy">
-                              	<h3>Corporate Law</h3>
-                              	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
-                              </div>
-                              </div> -->
-                           <!-- <div class="gtco-practice-area-item animate-box">
-                              <div class="gtco-icon">
-                              	<img src="images/scale.png" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-                              </div>
-                              <div class="gtco-copy">
-                              	<h3>Accident Law</h3>
-                              	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
-                              </div>
-                              </div> -->
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-
-            <!-- tickets -->
-         <section id="gtco-practice-areas" data-section="tickets">
-               <div class="container">
-                  <div class="row row-pb-md">
-                     <div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
-                        <h1>Tickets</h1>
-                        <p class="sub">Next wave of tickets available on January 29th at 2:10 am. Tickets are $35.</p>
-                        <a class="ticket-button" href="https://www.eventbrite.com/e/tedxutaustin-spring-2018-tickets-40986505742">Book your ticket</a>
-                     </div>
-                     <p class="noselect" id="tix-background" data-animate-effect="fadeIn">Tickets</p>
-                     <div class="row">
-
-                        <!--<div class="col-md-6">
                            <div class="gtco-practice-area-item animate-box">
                               <div class="gtco-icon">
                                  <img src="images/Clock.svg" alt="" width="60%">
@@ -601,17 +507,104 @@
                               	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
                               </div>
                               </div>
-                        </div>-->
+                        </div>
                      </div>
                   </div>
                </div>
             </section>
+         <section id="gtco-practice-areas" data-section="tickets">
+               <div class="container">
+                  <div class="row row-pb-md">
+                     <div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
+                        <h1>Tickets</h1>
+                        <p class="sub">Next wave of tickets available on January 29th at 2:10 am. Tickets are $35.</p>
+                        <a class="ticket-button" href="https://www.eventbrite.com/e/tedxutaustin-spring-2018-tickets-40986505742">Book your ticket</a>
+                     </div>
+                     <p class="noselect" id="tix-background" data-animate-effect="fadeIn">Tickets</p>
+                     <div class="row">
 
-            <section data-section="schedule">
+                        <div class="col-md-6">
+                           <div class="gtco-practice-area-item animate-box">
+                              <div class="gtco-icon">
+                                 <img src="images/Clock.svg" alt="" width="60%">
+                              </div>
+                              <div class="gtco-copy">
+                                 <h3>When?</h3>
+                                 <p>
+                                    This year's conference will be on
+                                    <strong>Saturday, February 10, 2018</strong>
+                                    Student Activity Center:
+                                       <a href="https://goo.gl/maps/9mmr1ErVKXy">2201 Speedway, Austin, TX 78712</a>
+                                 </p>
+                              </div>
+                           </div>
+                            <div class="gtco-practice-area-item animate-box">
+                              <div class="gtco-icon">
+                              	<img src="images/Megaphone.png" alt="">
+                              </div>
+                              <div class="gtco-copy">
+                              	<h3>2018 Speaker Line-Up</h3>
+                              	<p>Applications for becoming a 2018 TEDx Speaker are open for students, professors, and members of the Austin community. Click here to download the speaker application!</p>
+                              </div>
+                              </div> -->
+                           <!-- <div class="gtco-practice-area-item animate-box">
+                              <div class="gtco-icon">
+                              	<img src="images/scale.png" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+                              </div>
+                              <div class="gtco-copy">
+                              	<h3>Financial Law</h3>
+                              	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
+                              </div>
+                              </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="gtco-practice-area-item animate-box">
+                              <div class="gtco-icon">
+                                 <img src="images/map.svg" alt="" width="80%">
+                              </div>
+                              <div class="gtco-copy">
+                                 <h3>Where?</h3>
+                                 <p>The University of Texas at Austin Union Theater:
+                                    <a href="https://goo.gl/maps/Ux3zKtMNszJ2">Guadalupe St & W 24th St, Austin, TX 78712</a>
+                                 </p>
+                                 <ul>
+                                    <li>Admission to TEDxUTAustin, February 10th.</li>
+                                    <li>Thank you in opening remarks.</li>
+                                    <li>Recognition across event programs and social media.</li>
+                                    <li>Opportunity to distribute gift items during intermissions.</li>
+                                    <li>Priority seating.</li>
+                                    </ul>
+                              </div>
+                           </div>
+                            <div class="gtco-practice-area-item animate-box">
+                              <div class="gtco-icon">
+                              	<img src="images/scale.png" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+                              </div>
+                              <div class="gtco-copy">
+                              	<h3>Corporate Law</h3>
+                              	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
+                              </div>
+                              </div> -->
+                           <!-- <div class="gtco-practice-area-item animate-box">
+                              <div class="gtco-icon">
+                              	<img src="images/scale.png" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+                              </div>
+                              <div class="gtco-copy">
+                              	<h3>Accident Law</h3>
+                              	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
+                              </div>
+                              </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>-->
+
+            <section id="sch" data-section="schedule">
+              <div class="parinner">
+                <h1>Schedule</h1>
+              </div>
               <div class="par-container">
-                <div class="parinner">
-                  <h1>Schedule</h1>
-                </div>
                 <div class="schedule-line"></div>
                 <ul id="schedule">
                   <li>
@@ -619,7 +612,7 @@
                     <h4>10:30 am</h4>
                     <h5>Check-in</h5>
                   </li>
-                  <li>
+                  <li class="sch-above">
                     <div class="vl"></div>
                     <h4>11:00 am</h4>
                     <h5>Opening</br>Words</h5>
@@ -841,9 +834,7 @@
            </div>
            <div class="pull-right footer-links main-nav">
              <ul>
-               <li><a href="#" data-nav-section="about">Theme</a></li>
                <li><a href="#" data-nav-section="our-speakers">Speakers</a></li>
-               <li><a href="#" data-nav-section="practice-areas">About</a></li>
                <li><a href="#" data-nav-section="our-team">Our Team</a></li>
                <li><a href="https://www.eventbrite.com/e/tedxutaustin-spring-2018-tickets-40986505742">Tickets</a></li>
              </ul>
