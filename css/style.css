@@ -260,18 +260,25 @@ h1, h2, h3, h4, h5, h6, figure {
   line-height: 26.141px;
   background-color: #fafafa;
   cursor: pointer;
-
 }
 
 .popup .speaker-name {
   float: left;
   margin-left: 5%;
+  padding-left: 0;
   color: black;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-size: 32px;
   line-height: normal;
+  width: 40%;
+}
+
+.popup .speaker-name li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 3%;
 }
 
 .popup .speaker-bio {
@@ -281,7 +288,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .everything-but-popup {
-  z-index: 1002;
+  z-index: 10000;
   display: none;
   position: fixed;
   overflow-y: scroll;
@@ -309,6 +316,60 @@ h1, h2, h3, h4, h5, h6, figure {
 .everything-but-popup .pop-overlay {
    overflow-y: scroll;
    top: 0; right: 0; bottom: 0; left: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .popup {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .popup {
+    width: 85%;
+  }
+
+  .popup .speaker-name {
+    margin-left: 2%;
+  }
+
+  .popup .speaker-bio {
+    margin-right: 2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popup {
+    width: 90%;
+  }
+  .popup .speaker-name {
+    float: none;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .popup .speaker-bio {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .popup .close-button {
+    font-size: 1.5em;
+    line-height: 19.606px;
+    padding: .75em;
+    margin: .75em;
+  }
+
+}
+
+@media screen and (max-width: 620px) {
+  .popup img {
+    width: 70%;
+    margin-left: 15%;
+  }
 }
 
 [aria-hidden="true"] { display: none; }
@@ -369,17 +430,23 @@ h1, h2, h3, h4, h5, h6, figure {
   font-family: helvLight, Helvetica;
   font-size: 48px;
   font-weight: lighter;
-  margin-top: 2.6em;
-  margin-bottom: 2em;
+  margin-top: 10%;
+  margin-bottom: 8%;
 }
 
 #our-team ul li {
   padding-left: 12px;
   padding-right: 12px;
   display: inline-block;
+  width: 31%;
 }
 #our-team ul li img {
-  height: 14em;
+  width: 100%;
+}
+@media screen and (max-width: 775px) {
+  #our-team ul li {
+
+  }
 }
 /*
 #our-team ul li img:hover {
@@ -479,6 +546,10 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-left: 20px;
 }
 
+.foot-logo {
+  float: left;
+}
+
 .foot-logo a p {
   position: relative;
   font-weight: bold;
@@ -494,7 +565,16 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .footer-links {
   position: relative;
+  float: right;
   top: 61.8px;
+}
+
+.cop {
+  float: left;
+}
+
+.foot-icons {
+  float: right;
 }
 
 .footer-links li {
@@ -511,9 +591,64 @@ h1, h2, h3, h4, h5, h6, figure {
   text-align: center;
 }
 
-.foot-creds a {
+.foot-creds li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 2px;
+}
+
+.foot-creds  li a {
   text-decoration: underline;
   color: #777;
+}
+
+
+@media screen and (max-width: 768px) {
+  .foot-logo {
+    float: none;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    text-align: center;
+  }
+
+  .footer-links {
+    display: none;
+    float: none;
+    margin: 0 auto;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .footer-links ul {
+    padding-left: 0;
+    width: 50%;
+    margin-left: 25%;
+  }
+  .footer-links ul li {
+    padding: 0 10px;
+  }
+  .footer-links ul li a {
+    font-size: 25px;
+  }
+
+  .foot-creds {
+    margin-top: -30px;
+  }
+
+  .foot-creds li {
+    display: block;
+  }
+
+  .cop {
+    float: none;
+    clear: both;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: -100px;
+  }
+
+
 }
 
 /*parallax*/
@@ -1268,6 +1403,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .gtco-social-icons {
   margin: 0;
   padding: 0;
+  float: right;
 }
 .gtco-social-icons li {
   margin: 0;
@@ -1290,7 +1426,19 @@ h1, h2, h3, h4, h5, h6, figure {
 .gtco-social-icons li a i {
   font-size: 20px;
 }
+@media screen and (max-width: 768px) {
+  .gtco-social-icons {
+    float: none;
+    margin: 10px auto;
+    text-align: center;
+  }
 
+  .row .copyright {
+    height: 10%;
+  }
+
+
+}
 .gtco-contact-info {
   margin-bottom: 30px;
   float: left;
