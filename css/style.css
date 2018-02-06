@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .our-speakers {
-  padding-top: 50px;
+  /*padding-top: 50px;*/
 }
 
 #speaker-list, .team-list {
@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #speaker-slider {
   list-style-type: none;
   overflow-x: scroll;
-  width: 90%;
+  width: 85%;
   padding-left: 0;
   white-space: nowrap;
   display: inline-block;
@@ -133,6 +133,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #speaker-slider li {
+  cursor: pointer;
   display: inline-block;
   vertical-align: top;
   line-height: 0;
@@ -774,6 +775,62 @@ h1, h2, h3, h4, h5, h6, figure {
     height: 500px;
   }
 }
+
+/*speaker arrows*/
+.speak-parent {
+  position: relative;
+}
+
+.speak-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 72px;
+}
+
+#speak-left {
+  left: 1%;
+}
+
+#speak-right {
+  right: 1%;
+}
+
+#speak-parent div {
+  height: 2em;
+}
+
+@media screen and (max-width: 1150px) {
+  .speak-arrow {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #speaker-slider {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #speaker-slider {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #speaker-slider {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #speaker-slider {
+    width: 60%;
+  }
+}
+
 
 /*end new stuff*/
 /*end groovy suvy edits*/
@@ -2041,6 +2098,18 @@ form label {
     -webkit-animation: pulsate 1.5s ease-out;
     -webkit-animation-iteration-count: infinite;
     opacity: 0.5;
+}
+
+.gtco-nav div div div ul li a {
+  color: #ccc;
+}
+
+.gtco-nav div div div ul li.btn-cta a span {
+  color: #ccc;
+}
+
+.gtco-nav div div div ul li.active a {
+  color: #e62b1e;
 }
 
 #copy-hope {

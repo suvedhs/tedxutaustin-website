@@ -82,3 +82,12 @@ function thea() {
     var body = document.body;
     body.classList.toggle("stop-scroll");
 }
+
+// for scrolling left and right on speakers
+function scrollRight() {
+    $('#speaker-slider').animate( { scrollLeft: '+=265' }, 1000, 'easeOutQuad' );
+}
+
+function scrollLeft() {
+    $('#speaker-slider').animate( { scrollLeft: '-=265' }, 1000, 'easeOutQuad' );
+}
