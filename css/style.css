@@ -434,6 +434,11 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 8%;
 }
 
+#our-team ul {
+  width: 60%;
+  margin: 0 auto;
+}
+
 #our-team ul li {
   padding-left: 12px;
   padding-right: 12px;
@@ -444,8 +449,8 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
 }
 @media screen and (max-width: 775px) {
-  #our-team ul li {
-
+  #our-team ul {
+    width: 100%;
   }
 }
 /*
@@ -571,6 +576,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .cop {
   float: left;
+
 }
 
 .foot-icons {
@@ -588,7 +594,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .foot-creds {
+  padding-left: 0;
   text-align: center;
+  margin-top: -10px;
 }
 
 .foot-creds li {
@@ -2034,6 +2042,12 @@ form label {
     -webkit-animation-iteration-count: infinite;
     opacity: 0.5;
 }
+
+#copy-hope {
+  margin-top: 120px;
+  margin-left: 2px;
+}
+
 @-webkit-keyframes pulsate {
     0% {
         opacity: 0.5;
