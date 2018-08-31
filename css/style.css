@@ -394,7 +394,8 @@ h1, h2, h3, h4, h5, h6, figure {
     font-weight: 100;
     color: rgba(230, 43, 30, 1);
     display: inline-block;
-    margin-top: 70px;
+    margin: 70px auto;
+    margin-top: 0;
     border: 3px solid rgba(230, 43, 30, 1);
     /* #e62b1e */
     padding-left: 30px;
@@ -408,13 +409,40 @@ h1, h2, h3, h4, h5, h6, figure {
           -ms-user-select: none; /* Internet Explorer/Edge */
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome and Opera */
+} 
+
+.application-button {
+  font-size: 20px;
+  font-family: "Open Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  color: rgba(230, 43, 30, 1);
+  padding: 15px;
+  text-align: center;
+  margin-left: 51%;
+  background-color: white;
+  position: relative;
+  bottom: 50px;
+  border: 1px solid rgba(230, 43, 30, 1);
+  border-radius: 2.5px;
+}
+
+.application-button:hover {
+  color: #fff;
+  border-color: #e62b1e;
+  background-color: rgba(230, 43, 30, 1);
+  text-shadow: -0px 0 #fff, 0 0px #fff, 0px 0 #fff, 0 -0px #fff;
+}
+
+.col-md-6 {
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .ticket-button:hover {
-    color: #fff;
-    border-color: #e62b1e;
-    background-color: rgba(230, 43, 30, 1);
-    text-shadow: -0px 0 #fff, 0 0px #fff, 0px 0 #fff, 0 -0px #fff;
+  color: #fff;
+  border-color: #e62b1e;
+  background-color: rgba(230, 43, 30, 1);
+  text-shadow: -0px 0 #fff, 0 0px #fff, 0px 0 #fff, 0 -0px #fff;
 }
 
 /*new site stuff*/
@@ -431,7 +459,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-family: helvLight, Helvetica;
   font-size: 48px;
   font-weight: lighter;
-  margin-top: 10%;
+  margin-top: 3%;
   margin-bottom: 8%;
 }
 
@@ -449,6 +477,28 @@ h1, h2, h3, h4, h5, h6, figure {
 #our-team ul li img {
   width: 100%;
 }
+
+#our-team ul li div {
+  text-align: center;
+  margin-top: 10px;
+  /* padding-left: 20%; */
+
+}
+
+#our-team ul li div h5 {
+  font-size: 1.25em;
+  font-weight: 700;
+  display: inline;
+  position: relative;
+}
+
+#our-team ul li div h6 {
+  font-size: 1.125em;
+  font-weight: 100;
+  display: inline;
+  position: relative;
+}
+
 @media screen and (max-width: 775px) {
   #our-team ul {
     width: 100%;
