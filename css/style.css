@@ -967,7 +967,7 @@ footer#black-footer div.container img {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.gtco-nav ul li a:hover, .gtco-nav ul li a:focus, .gtco-nav ul li a:active {
+.gtco-nav ul li a:hover {
   color: #fff;
 }
 .gtco-nav ul li.has-dropdown {
