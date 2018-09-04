@@ -89,10 +89,7 @@ h1, h2, h3, h4, h5, h6, figure {
 /* Suvedh edits*/
 
 /* top logo */
-#gtco-logo a span {
-  color: red;
-  font-weight: bolder;
-}
+
 
 .our-speakers {
   /*padding-top: 50px;*/
@@ -704,8 +701,23 @@ footer#black-footer div.container img {
     text-align: center;
     margin-bottom: -100px;
   }
+}
 
+#gtco-logo {
+  float: left;
+  display: inline;
+}
 
+#gtco-logo a img {
+  width: 500px;
+}
+
+.gtco-nav div {
+  display: flex;
+}
+
+.gtco-nav div .main-nav {
+  align-self: flex-end;
 }
 
 /*parallax*/
@@ -915,32 +927,7 @@ footer#black-footer div.container img {
     padding: 20px 0;
   }
 }
-.gtco-nav #gtco-logo {
-  font-size: 30px;
-  line-height: 1;
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-}
-/*groovy edits*/
-.gtco-nav #gtco-logo em {
-  color: #fff;
-  font-weight: 100;
-  font-style: normal;
-  margin-left: 15px;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
 
-.gtco-nav #gtco-logo a {
-  padding: 0px 10px;
-  color: #fff;
-  font-weight: 700;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-}
 @media screen and (max-width: 768px) {
   .gtco-nav .menu-1, .gtco-nav .menu-2 {
     display: none;
@@ -1091,17 +1078,14 @@ footer#black-footer div.container img {
   padding: 4px 20px;
   color: #fff;
 }
-.gtco-nav.scrolled #gtco-logo em {
-  color: #000;
-}
 
 #gtco-hero .gtco-video-link a {
   color: rgba(255, 255, 255, 0.5);
 }
 #gtco-hero .gtco-video-link a i {
   font-size: 78px;
-  top: 2px;
-  position: relative;
+  /* top: 2px; */
+  /* position: relative; */
   color: #fff;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);

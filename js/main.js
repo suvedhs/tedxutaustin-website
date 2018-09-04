@@ -50,11 +50,11 @@
 	var header = function() {
 		$(window).scroll(function(){
 			var st = $(window).scrollTop();
-			if (st > 50) {
-				$('.gtco-nav').addClass('scrolled');
-			} else {
-				$('.gtco-nav').removeClass('scrolled');
-			}
+			// if (st > 50) {
+			// 	$('.gtco-nav').addClass('scrolled');
+			// } else {
+			// 	$('.gtco-nav').removeClass('scrolled');
+			// }
 		});
 
 	};
